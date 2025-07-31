@@ -1,22 +1,22 @@
 # 🏋️‍♂️ Gym Management System
 
-A full-stack gym management software built in Python (Django or Flask).  
+A full-stack gym management software built in Python.  
 **Target users:** 100  
-**Purpose:** Learn full-stack development and showcase a realistic project.
+
 
 ---
 
 ## 🔧 Tech Stack (Planned)
 - **Backend:** Python (Django or Flask)
 - **Frontend:** HTML, CSS, JS or React
-- **Database:** PostgreSQL or SQLite
+- **Database:** PostgreSQL or MySQL
 - **Auth:** Django built-in auth or Flask-Login
 - **Tools:** VS Code, Git, GitHub
 
 ---
 
 ## 📅 Timeline
-Started on: July 20, 2025  
+Started on: July 30, 2025  
 Work in progress. Features will be added gradually over weeks.
 
 ---
@@ -29,5 +29,3 @@ Work in progress. Features will be added gradually over weeks.
 
 ---
 
-## 🚀 Goal
-Practice full-stack dev and build a GitHub-worthy resume project.

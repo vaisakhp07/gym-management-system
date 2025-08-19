@@ -6,13 +6,12 @@ A full-stack gym management software built in Python.
 
 ---
 
-## 🔧 Tech Stack (Planned)
-- **Backend:** Python (Django or Flask)
-- **Frontend:** HTML, CSS, JS or React
-- **Database:** PostgreSQL or MySQL
-- **Auth:** Django built-in auth or Flask-Login
-- **Tools:** VS Code, Git, GitHub
-
+## 🔧 Tech Stack
+- **Backend:** Python (Django)  
+- **Frontend:** Django Templates (HTML, CSS, JavaScript)  
+- **Database:** SQLite (development), PostgreSQL/MySQL (planned for production)  
+- **Authentication:** Django built-in Auth  
+- **Tools:** VS Code, Git, GitHub  
 ---
 
 ## 📅 Timeline

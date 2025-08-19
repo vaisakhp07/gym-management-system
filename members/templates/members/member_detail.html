@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}{{ member.full_name }}{% endblock %}
+
+{% block content %}
+<h2>{{ member.full_name }}</h2>
+<p>Plan: {{ member.plan.name }}</p>
+<p>Joined on: {{ member.joined_date }}</p>
+{% endblock %}

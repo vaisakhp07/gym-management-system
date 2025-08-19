@@ -1,0 +1,8 @@
+<h1>Trainer List</h1>
+<ul>
+  {% for trainer in trainers %}
+    <li>
+      <a href="{% url 'trainer_detail' trainer.pk %}">{{ trainer.first_name }} {{ trainer.last_name }}</a>
+    </li>
+  {% endfor %}
+</ul>

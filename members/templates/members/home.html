@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Gym Management{% endblock %}
+
+{% block header %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Total Members</h5>
+                <p class="card-text display-4">{{ member_count }}</p>
+                <a href="{% url 'member-list' %}" class="text-white">View all</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Active Members</h5>
+                <p class="card-text display-4">{{ active_member_count }}</p>
+                <a href="{% url 'member-list' %}?active=True" class="text-white">View active</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-info mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Total Trainers</h5>
+                <p class="card-text display-4">{{ trainer_count }}</p>
+                <a href="{% url 'trainer-list' %}" class="text-white">View all</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                Recent Members
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    {% for member in recent_members %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="{% url 'member-detail' member.id %}">
+                            {{ member.full_name }}
+                        </a>
+                        <span class="badge bg-primary rounded-pill">
+                            {{ member.plan.name }}
+                        </span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                Available Trainers
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    {% for trainer in trainers %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="{% url 'trainer-detail' trainer.id %}">
+                            {{ trainer.name }}
+                        </a>
+                        <span class="badge bg-success rounded-pill">
+                            {{ trainer.specialty }}
+                        </span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

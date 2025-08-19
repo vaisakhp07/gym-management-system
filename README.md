@@ -1,8 +1,6 @@
 # 🏋️‍♂️ Gym Management System
 
 A full-stack gym management software built in Python.  
-**Target users:** 100  
-
 
 ---
 
